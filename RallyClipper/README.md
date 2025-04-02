@@ -15,4 +15,3 @@ Make sure you have [Anaconda](https://www.anaconda.com/) or [Miniconda](https://
 
 ```bash
 conda env create -f env.yml
-
