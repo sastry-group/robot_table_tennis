@@ -332,6 +332,7 @@ main() {
             phase4
             phase5
             phase6
+            phase7
             ;;
         *)
             echo "Usage: $0 --gpu_ids 'GPU_IDS' {phase1|phase2|phase3|phase4|phase5|phase6|all}"

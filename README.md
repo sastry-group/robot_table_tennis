@@ -43,3 +43,37 @@ phalp.__file__
 
 Make sure to find you have the `phalp/3D/models/smpl/SMPL_NEUTRAL.pkl` files
 
+
+## Downloading Ball Tracking Model
+For the following steps navigate to the HumanPoseTracker folder in this repo.
+```bash
+cd BallTracker
+```
+
+Once there run the following commands.
+```bash
+conda deactivate
+conda activate ball
+pip install gdown
+rm -r finetune
+rm -r ckpts
+gdown 1b7esQo0NNkFutR5ScC1KKWW0zyUGjZ1E
+gdown 1sK9H5_5kbHegb-_b-5PuDeifXNQQeMHv
+unzip finetune.zip
+unzip ckpts.zip
+rm finetune.zip
+rm ckpts.zip
+conda deactivate
+```
+
+
+## Test 
+
+To test the repository run the following. 
+
+```bash
+chmod +x run_pipeline.sh
+./run_pipeline.sh --gpu_ids "0 1 2 3 4 5" all
+```
+
+You can replace "0 1 2 3 4 5" with the ids of the gpus on your machine.
