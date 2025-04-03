@@ -13,6 +13,9 @@ conda env create -f TableTracker/env.yml
 ## Setting up the Human Pose Tracker
 
 For the following steps navigate to the HumanPoseTracker folder in this repo.
+```bash
+cd HumanPoseTracker
+```
 
 ### Human Pose Tracker environment setup:
 
